@@ -192,12 +192,30 @@
   </ul>
   <p><strong>Telemetry Consent:</strong> Users maintain complete control over analytics collection. Telemetry can be enabled or disabled at any time from the app settings menu.</p>
 
-  <h2>5. Data Retention & Deletion</h2>
-  <p>Because your financial portfolio resides entirely within your device's local storage sandbox, you retain absolute ownership and control over its deletion:</p>
-  <ul>
-    <li><strong>In-App Clear Data:</strong> Using the clear data option inside settings purges all local portfolio databases immediately.</li>
-    <li><strong>App Uninstallation:</strong> Uninstalling the Nav Pulse application permanently removes all stored data from your device.</li>
-  </ul>
+  <h2 id="data-deletion">5. Data Retention & User Data Deletion Request</h2>
+  <p>Nav Pulse is designed to give you complete sovereignty over your financial data. We provide clear, straightforward mechanisms for requesting and executing the deletion of any data associated with your use of the application:</p>
+
+  <div class="card">
+    <h3 style="margin-top: 0;">A. Local Financial & Portfolio Data</h3>
+    <p>All mutual fund transaction logs, folio details, scheme quantities, and valuation histories are stored solely in a private SQLite database inside the app's local sandbox on your physical device. We do not maintain any cloud databases or remote user accounts.</p>
+    <ul>
+      <li><strong>Immediate Self-Deletion:</strong> You can permanently wipe 100% of your financial records instantly by navigating to <code>Settings &gt; Apps &gt; Nav Pulse &gt; Storage &gt; Clear Storage / Clear Data</code> on your Android device.</li>
+      <li><strong>App Uninstallation:</strong> Uninstalling the Nav Pulse application automatically triggers the Android OS to permanently erase the local database and all associated application files.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3 style="margin-top: 0;">B. Telemetry & Analytics Deletion Request</h3>
+    <p>Nav Pulse does not collect any personal financial numbers or user account credentials. To monitor crashes and app performance, we use Google Firebase Analytics which records only pseudonymous technical signals (such as app navigation events, crash logs, and random app instance identifiers).</p>
+    <p>If you wish to request the deletion of any pseudonymous telemetry data associated with your installation, you may submit a request to our support desk:</p>
+    <ul>
+      <li><strong>Request Email:</strong> <a href="mailto:khsupport1@gmail.com">khsupport1@gmail.com</a></li>
+      <li><strong>Email Subject:</strong> <code>Data Deletion Request - Nav Pulse</code></li>
+      <li><strong>Information to Include:</strong> Your request to delete telemetry data along with your Firebase App Instance ID (accessible via app settings or by providing your device model and approximate installation date).</li>
+      <li><strong>Processing Timeframe:</strong> Deletion requests are processed within 30 days via Google Analytics / Firebase User Deletion protocols.</li>
+      <li><strong>Immediate Local Reset:</strong> You can also immediately disassociate your device from all past telemetry by clearing app data or disabling analytics under application settings.</li>
+    </ul>
+  </div>
 
   <h2>6. Third-Party Services</h2>
   <p>Aside from public market data sources (AMFI) and Google Firebase Analytics, Nav Pulse does not incorporate advertising SDKs, tracking libraries, or data brokers.</p>
